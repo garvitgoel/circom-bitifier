@@ -1,5 +1,4 @@
 # circom-bitifier
-bitifier and debitifier
 
 main.circom contains the main logic of my bitifier
 
