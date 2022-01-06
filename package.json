@@ -1,0 +1,24 @@
+{
+  "name": "circom-bitifier",
+  "version": "1.0.0",
+  "description": "main.circom contains the main logic of my bitifier",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --max-old-space=4000 --timeout=200000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garvitgoel/circom-bitifier.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garvitgoel/circom-bitifier/issues"
+  },
+  "homepage": "https://github.com/garvitgoel/circom-bitifier#readme",
+  "dependencies": {
+    "circom_tester": "^0.0.9",
+    "circomlibjs": "^0.1.1",
+    "mocha": "^9.1.3"
+  }
+}
