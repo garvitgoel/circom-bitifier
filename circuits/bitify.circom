@@ -1,15 +1,4 @@
 pragma circom 2.0.0;
-/*
-template DeBitify(n){
-    signal input bits[n];
-    signal output num;
-    var temp_num = 0;
-    for (var i=0; i<n; i++){
-        temp_num = temp_num + bits[i] * 2**i;
-    }
-
-    num <== temp_num;
-}*/
 
 template Bitify(n){
     signal input num;
@@ -32,10 +21,9 @@ template Main(n) {
     signal output out[n];
     component bitify = Bitify(n);
     var i;
-
     bitify.num <== in;
     for (i=0; i<n; i++){
-        bitify.bits[i] ==> out[i];
+        out[i] <== bitify.bits[i];
     }
 
 }
